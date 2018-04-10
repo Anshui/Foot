@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/chair"
+    android:padding="16dp">
+
+    <Button
+        android:layout_above="@+id/zongguan_tv"
+        android:layout_alignParentRight="true"
+        android:id="@+id/zongguan_bt"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/guanbi_selector"/>
+    <TextView
+        android:id="@+id/zongguan_tv"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="64dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="总关"
+        android:textSize="10sp"
+        android:textColor="#1a237e"/>
+
+
+    <Switch
+        android:id="@+id/dianji"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="12sp"
+        android:textColor="#1a237e"
+        android:text="电机开关"
+        android:padding="4dp"/>
+
+    <LinearLayout
+        android:id="@+id/kongzhi"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/dianji"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/init"
+            android:layout_marginTop="16dp"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:text="数据初始化"
+            android:textSize="12dp"
+            android:textColor="#1a237e"
+            android:backgroundTint="#b2ff59"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:padding="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="12sp"
+            android:text="档位选择"
+            android:textColor="#1a237e"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:checkedButton="@id/rbt_1">
+            <RadioButton
+                android:id="@+id/rbt_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="0%"
+                android:textColor="#d50000"/>
+            <RadioButton
+                android:id="@+id/rbt_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="25%"
+                android:textColor="#ef5350"/>
+            <RadioButton
+                android:id="@+id/rbt_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="50%"
+                android:textColor="#ffeb3b"/>
+            <RadioButton
+                android:id="@+id/rbt_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="75%"
+                android:textColor="#1b5e20"/>
+            <RadioButton
+                android:id="@+id/rbt_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="100%"
+                android:textColor="#01579b"/>
+        </RadioGroup>
+
+        <Switch
+            android:id="@+id/duanlian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="锻炼 开/关"
+            android:textColor="#1a237e"
+            android:textSize="12sp"
+            android:padding="4dp"
+            android:layout_marginTop="16dp"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

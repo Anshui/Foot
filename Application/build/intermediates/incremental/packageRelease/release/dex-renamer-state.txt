@@ -1,0 +1,4 @@
+#Thu Mar 15 14:56:45 CST 2018
+base.0=D\:\\AndroidStudioProjects\\Robot\\Application\\build\\intermediates\\transforms\\dex\\release\\0
+path.0=classes.dex
+renamed.0=classes.dex

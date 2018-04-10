@@ -1,0 +1,7 @@
+#Internal package file, do not edit.
+#Fri Mar 09 16:15:02 CST 2018
+0.baseType=DIRECTORY
+0.base=D\:\\AndroidStudioProjects\\Robot\\Application\\build\\intermediates\\transforms\\dex\\release\\0
+0.path=classes.dex
+0.set=DEX
+count=1
