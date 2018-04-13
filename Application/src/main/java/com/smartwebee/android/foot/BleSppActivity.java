@@ -23,8 +23,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.smartwebee.android.robot.R;
-
 import java.util.ArrayList;
 import java.util.Timer;
 import java.util.TimerTask;
@@ -43,12 +41,12 @@ public class BleSppActivity extends Activity implements View.OnClickListener {
 
     static long recv_cnt = 0;
 
-    private String mDeviceName;
-    private String mDeviceAddress;
-    private BluetoothLeService mBluetoothLeService;
+    protected String mDeviceName;
+    protected String mDeviceAddress;
+    protected BluetoothLeService mBluetoothLeService;
     private ArrayList<ArrayList<BluetoothGattCharacteristic>> mGattCharacteristics =
             new ArrayList<ArrayList<BluetoothGattCharacteristic>>();
-    private boolean mConnected = false;
+    protected boolean mConnected = false;
 
     private final String LIST_NAME = "NAME";
     private final String LIST_UUID = "UUID";
@@ -76,7 +74,7 @@ public class BleSppActivity extends Activity implements View.OnClickListener {
     private TimerTask task;
 
     // Code to manage Service lifecycle.
-    private final ServiceConnection mServiceConnection = new ServiceConnection() {
+    protected final ServiceConnection mServiceConnection = new ServiceConnection() {
 
         @Override
         public void onServiceConnected(ComponentName componentName, IBinder service) {
@@ -101,7 +99,7 @@ public class BleSppActivity extends Activity implements View.OnClickListener {
     // ACTION_GATT_SERVICES_DISCOVERED: discovered GATT services.
     // ACTION_DATA_AVAILABLE: received data from the device.  This can be a result of read
     //                        or notification operations.
-    private final BroadcastReceiver mGattUpdateReceiver = new BroadcastReceiver() {
+    protected final BroadcastReceiver mGattUpdateReceiver = new BroadcastReceiver() {
         @Override
         public void onReceive(Context context, Intent intent) {
             final String action = intent.getAction();
@@ -125,7 +123,7 @@ public class BleSppActivity extends Activity implements View.OnClickListener {
                  for(byte byteChar : data)
                       stringBuilder.append(String.format("%02X ", byteChar));
                 Log.v("log",stringBuilder.toString());
-                displayData(intent.getByteArrayExtra(BluetoothLeService.EXTRA_DATA));
+//                displayData(intent.getByteArrayExtra(BluetoothLeService.EXTRA_DATA));
             }else if (BluetoothLeService.ACTION_WRITE_SUCCESSFUL.equals(action)) {
                 mSendBytes.setText(sendBytes + " ");
                 if (sendDataLen>0)
@@ -140,7 +138,7 @@ public class BleSppActivity extends Activity implements View.OnClickListener {
 
         }
     };
-    
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

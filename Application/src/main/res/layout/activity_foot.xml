@@ -12,7 +12,7 @@
         android:layout_height="24dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="64dp"
         android:padding="5dp"
         android:text="开始/结束"
         app:layout_constraintEnd_toEndOf="parent"
@@ -40,6 +40,7 @@
             android:layout_weight="1"
             android:gravity="center"
             android:text="主动模式"
+            android:checked="true"
             tools:layout_editor_absoluteX="133dp"
             tools:layout_editor_absoluteY="45dp" />
 
@@ -67,20 +68,23 @@
         android:id="@+id/count_text"
         android:layout_width="80dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:gravity="center"
         android:text="次数设定"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="@+id/count"
         app:layout_constraintStart_toStartOf="@+id/count"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup2" />
 
-    <TextView
+    <EditText
         android:id="@+id/count"
         android:layout_width="80dp"
         android:layout_height="40dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:inputType="number"
+        android:maxEms="2"
+        android:gravity="center"
         app:layout_constraintStart_toEndOf="@+id/down"
         app:layout_constraintTop_toBottomOf="@+id/count_text" />
 
@@ -89,6 +93,7 @@
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginStart="16dp"
+        android:background="@drawable/down_selector"
         app:layout_constraintBottom_toBottomOf="@+id/count"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/count"
@@ -99,6 +104,7 @@
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginStart="8dp"
+        android:background="@drawable/plus_selector"
         app:layout_constraintBottom_toBottomOf="@+id/count"
         app:layout_constraintStart_toEndOf="@+id/count"
         app:layout_constraintTop_toTopOf="@+id/count"
@@ -111,18 +117,61 @@
         android:gravity="center"
         android:text="已完成次数"
         android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="@+id/textView5"
-        app:layout_constraintStart_toStartOf="@+id/textView5"
+        app:layout_constraintEnd_toEndOf="@+id/recount"
+        app:layout_constraintStart_toStartOf="@+id/recount"
         app:layout_constraintTop_toTopOf="@+id/count_text" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/recount"
         android:layout_width="80dp"
         android:layout_height="40dp"
         android:layout_marginTop="8dp"
+        android:background="@drawable/tv_background"
+        android:gravity="center"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/up"
         app:layout_constraintTop_toBottomOf="@+id/complete_count_text" />
+
+    <TextView
+        android:id="@+id/debug"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:padding="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup">
+        <RadioButton
+            android:checked="true"
+            android:id="@+id/qiangdu1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="强度1"/>
+        <RadioButton
+            android:id="@+id/qiangdu2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="强度2"/>
+        <RadioButton
+            android:id="@+id/qiangdu3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="强度3"/>
+    </RadioGroup>
 
 
 </android.support.constraint.ConstraintLayout>

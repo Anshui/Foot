@@ -16,6 +16,10 @@
         "source": "C:\\Users\\static\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-24.1.1.aar\\a1e5c7ebcaa8c411ae7186bb175b5f81\\res\\drawable-hdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png"
     },
     {
+        "merged": "D:\\AndroidStudioProjects\\Foot\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_plusg.png.flat",
+        "source": "D:\\AndroidStudioProjects\\Foot\\Application\\src\\main\\res\\drawable-hdpi\\plusg.png"
+    },
+    {
         "merged": "D:\\AndroidStudioProjects\\Foot\\Application\\build\\intermediates\\res\\merged\\debug\\drawable_abc_seekbar_tick_mark_material.xml.flat",
         "source": "C:\\Users\\static\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-24.1.1.aar\\a1e5c7ebcaa8c411ae7186bb175b5f81\\res\\drawable\\abc_seekbar_tick_mark_material.xml"
     },
@@ -360,6 +364,10 @@
         "source": "C:\\Users\\static\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-24.1.1.aar\\a1e5c7ebcaa8c411ae7186bb175b5f81\\res\\drawable-hdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png"
     },
     {
+        "merged": "D:\\AndroidStudioProjects\\Foot\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_downg.png.flat",
+        "source": "D:\\AndroidStudioProjects\\Foot\\Application\\src\\main\\res\\drawable-hdpi\\downg.png"
+    },
+    {
         "merged": "D:\\AndroidStudioProjects\\Foot\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
         "source": "C:\\Users\\static\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-24.1.1.aar\\a1e5c7ebcaa8c411ae7186bb175b5f81\\res\\drawable-xxxhdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png"
     },
@@ -534,6 +542,10 @@
     {
         "merged": "D:\\AndroidStudioProjects\\Foot\\Application\\build\\intermediates\\res\\merged\\debug\\layout_abc_list_menu_item_checkbox.xml.flat",
         "source": "C:\\Users\\static\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-24.1.1.aar\\a1e5c7ebcaa8c411ae7186bb175b5f81\\res\\layout\\abc_list_menu_item_checkbox.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\Foot\\Application\\build\\intermediates\\res\\merged\\debug\\drawable_plus_selector.xml.flat",
+        "source": "D:\\AndroidStudioProjects\\Foot\\Application\\src\\main\\res\\drawable\\plus_selector.xml"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\Foot\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_menu_selectall_mtrl_alpha.png.flat",
@@ -738,6 +750,10 @@
     {
         "merged": "D:\\AndroidStudioProjects\\Foot\\Application\\build\\intermediates\\res\\merged\\debug\\anim_abc_popup_enter.xml.flat",
         "source": "C:\\Users\\static\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-24.1.1.aar\\a1e5c7ebcaa8c411ae7186bb175b5f81\\res\\anim\\abc_popup_enter.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\Foot\\Application\\build\\intermediates\\res\\merged\\debug\\drawable_tv_background.xml.flat",
+        "source": "D:\\AndroidStudioProjects\\Foot\\Application\\src\\main\\res\\drawable\\tv_background.xml"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\Foot\\Application\\build\\intermediates\\res\\merged\\debug\\layout_gatt_services_characteristics.xml.flat",
@@ -1080,6 +1096,10 @@
         "source": "C:\\Users\\static\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-24.1.1.aar\\a1e5c7ebcaa8c411ae7186bb175b5f81\\res\\drawable-hdpi-v4\\abc_ic_star_black_16dp.png"
     },
     {
+        "merged": "D:\\AndroidStudioProjects\\Foot\\Application\\build\\intermediates\\res\\merged\\debug\\drawable_down_selector.xml.flat",
+        "source": "D:\\AndroidStudioProjects\\Foot\\Application\\src\\main\\res\\drawable\\down_selector.xml"
+    },
+    {
         "merged": "D:\\AndroidStudioProjects\\Foot\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_cab_background_top_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\static\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-24.1.1.aar\\a1e5c7ebcaa8c411ae7186bb175b5f81\\res\\drawable-mdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png"
     },
@@ -1188,6 +1208,10 @@
         "source": "C:\\Users\\static\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-24.1.1.aar\\a1e5c7ebcaa8c411ae7186bb175b5f81\\res\\color\\abc_btn_colored_borderless_text_material.xml"
     },
     {
+        "merged": "D:\\AndroidStudioProjects\\Foot\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_plusy.png.flat",
+        "source": "D:\\AndroidStudioProjects\\Foot\\Application\\src\\main\\res\\drawable-hdpi\\plusy.png"
+    },
+    {
         "merged": "D:\\AndroidStudioProjects\\Foot\\Application\\build\\intermediates\\res\\merged\\debug\\layout_abc_expanded_menu_layout.xml.flat",
         "source": "C:\\Users\\static\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-24.1.1.aar\\a1e5c7ebcaa8c411ae7186bb175b5f81\\res\\layout\\abc_expanded_menu_layout.xml"
     },
@@ -1218,6 +1242,10 @@
     {
         "merged": "D:\\AndroidStudioProjects\\Foot\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_man.png.flat",
         "source": "D:\\AndroidStudioProjects\\Foot\\Application\\src\\main\\res\\drawable-hdpi\\man.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\Foot\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_downy.png.flat",
+        "source": "D:\\AndroidStudioProjects\\Foot\\Application\\src\\main\\res\\drawable-hdpi\\downy.png"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\Foot\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_textfield_search_activated_mtrl_alpha.9.png.flat",

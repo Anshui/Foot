@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="D:\AndroidStudioProjects\Robot\Application\src\main\assets"/><source path="D:\AndroidStudioProjects\Robot\Application\build\generated\assets\shaders\debug"/></dataSet><dataSet config="debug"><source path="D:\AndroidStudioProjects\Robot\Application\src\debug\assets"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="D:\AndroidStudioProjects\Foot\Application\src\main\assets"/><source path="D:\AndroidStudioProjects\Foot\Application\build\generated\assets\shaders\debug"/></dataSet><dataSet config="debug"><source path="D:\AndroidStudioProjects\Foot\Application\src\debug\assets"/></dataSet></merger>
