@@ -143,10 +143,7 @@ public class FootActivity extends BleSppActivity implements View.OnClickListener
                     if (rb_obj.isChecked()){
                         commond = commond + "02";
                     }
-                    commond = commond + "0100AA";
-                    getSendBuf(commond);
-                    onSendBtnClicked();
-                    commond = "";
+                    commond = commond + "0100";
                 } else {
                     if (count_nub < 16){
                         commond = "550" + Integer.toHexString(count_nub);
@@ -159,17 +156,33 @@ public class FootActivity extends BleSppActivity implements View.OnClickListener
                     if (rb_obj.isChecked()){
                         commond = commond + "02";
                     }
-                    commond = commond + "0200AA";
-                    getSendBuf(commond);
-                    onSendBtnClicked();
-                    commond = "";
+                    commond = commond + "0200";
                 }
+                if (rb_qiangdu1.isChecked()){
+                    commond += "01";
+                }else if (rb_qiangdu2.isChecked()){
+                    commond += "02";
+                }else if (rb_qiangdu3.isChecked()){
+                    commond += "03";
+                }
+                commond += "AA";
+                getSendBuf(commond);
+                onSendBtnClicked();
+                commond = "";
             }
         });
         count = (EditText) findViewById(R.id.count);
         recount = (TextView) findViewById(R.id.recount);
         debug = (TextView)findViewById(R.id.debug);
         rb_obj = (RadioButton) findViewById(R.id.rb_obj);
+        rb_obj.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked){
+
+                }
+            }
+        });
         rb_sub = (RadioButton) findViewById(R.id.rb_sub);
 
         rb_qiangdu1 = (RadioButton) findViewById(R.id.qiangdu1);
@@ -185,7 +198,7 @@ public class FootActivity extends BleSppActivity implements View.OnClickListener
         char c = receiver.charAt(receiver.length()-2);
         char d = receiver.charAt(receiver.length()-1);
         Log.d("zzh", "getReceive: " + receiver.length());
-        if (receiver.length() == 12 && a == '5' && b == '5' && c == 'A' && d == 'A'){
+        if (receiver.length() == 14 && a == '5' && b == '5' && c == 'A' && d == 'A'){
             return receiver;
         } else {
             return null;

@@ -68,13 +68,13 @@
         android:id="@+id/count_text"
         android:layout_width="80dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="64dp"
         android:gravity="center"
         android:text="次数设定"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="@+id/count"
         app:layout_constraintStart_toStartOf="@+id/count"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroup2" />
+        app:layout_constraintTop_toBottomOf="@+id/rg_qiangdu" />
 
     <EditText
         android:id="@+id/count"
@@ -145,7 +145,8 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <RadioGroup
-        android:id="@+id/radioGroup2"
+        android:visibility="gone"
+        android:id="@+id/rg_qiangdu"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
